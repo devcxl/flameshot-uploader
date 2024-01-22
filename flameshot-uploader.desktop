@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=FlameshotUploader
+Comment=Uploads screenshots to minio s3
+Categories=Graphics
+Icon=cloud-upload
+Exec=flameshot-uploader %F
+Terminal=false
+Path=
+StartupNotify=false

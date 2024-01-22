@@ -1,0 +1,5 @@
+endpoint: s3.example.com
+bucket: screenshot
+public_dir: public
+access_key: access_key_xxxxxxxxxxxxxxx
+secret_key: secret_key_xxxxxxxxxxxxxxxxxxxxxxxxxxxxx
