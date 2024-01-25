@@ -52,8 +52,8 @@ try:
         )
         found = client.bucket_exists(config.bucket)
         if not found:
-            client.make_bucket(config.bucket_name)
-            log.info("Created bucket_name", config.bucket)
+            client.make_bucket(config.bucket)
+            log.info("Created bucket", config.bucket)
         else:
             log.info("Bucket", config.bucket, "already exists")
 
