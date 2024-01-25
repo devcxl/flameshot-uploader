@@ -25,7 +25,7 @@ jobs:
 
             -   name: Build with PyInstaller for Linux
                 run: |
-                    pyinstaller --onefile main.py
+                    pyinstaller --onefile --name flameshot-uploader main.py
                 shell: bash
 
             -   name: Upload Artifact
