@@ -63,11 +63,9 @@ try:
             file_path=upload_file_path,
             content_type='image/jpeg'
         )
-        template = f"""notify-send "Upload successful!" "<a href='https://{config.endpoint}/{config.bucket}/{config.public_dir}/{filename}'>View screenshots</a>" --icon=cloud-upload && echo 'https://{config.endpoint}/{config.bucket}/{config.public_dir}/{filename}'"""
+        template = f"""notify-send "Upload successful!" "<a href='https://{config.endpoint}/{config.bucket}/{config.public_dir}/{filename}'>View screenshots</a>" --icon=cloud-upload"""
         # 执行Shell命令
-        output = subprocess.run(template, shell=True, capture_output=True, text=True)
-        # 输出命令的执行结果
-        print(output.stdout)
+        output = os.system(template)
 
 except IndexError as e:
     log.error('file not found error')
